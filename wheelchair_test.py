@@ -1,6 +1,10 @@
 import RPi.GPIO as GPIO
 import time
 
+GPIO.setup(channel, GPIO.OUT, initial=GPIO.HIGH)
+
+'''
+
 GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(4, GPIO.OUT, initial=GPIO.LOW)
@@ -22,3 +26,4 @@ GPIO.output(17, GPIO.HIGH)
 time.sleep(.5)
 
 GPIO.output(17, GPIO.LOW)
+'''
