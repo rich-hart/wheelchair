@@ -8,7 +8,7 @@ def Check_Channel(channel):
 
     GPIO.output(channel, GPIO.HIGH)
 
-    time.sleep(.5)
+    time.sleep(.75)
 
     GPIO.output(channel, GPIO.LOW)
 
