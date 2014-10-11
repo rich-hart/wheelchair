@@ -11,11 +11,12 @@ def Check_Channel(channel):
     time.sleep(.5)
 
     GPIO.output(channel, GPIO.LOW)
-    
-FORDWARD_CHANNEL = 5
-REVERSE_CHANNEL = 13
-LEFT_CHANNEL = 19
-RIGHT_CHANNEL = 26
+
+'RPI Pins'    
+FORDWARD_CHANNEL = 8
+REVERSE_CHANNEL = 10
+LEFT_CHANNEL = 12
+RIGHT_CHANNEL = 16
 
 GPIO.setmode(GPIO.BOARD)
 
