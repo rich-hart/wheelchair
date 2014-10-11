@@ -18,7 +18,7 @@ time.sleep(.5)
 
 GPIO.output(FORDWARD_CHANNEL, GPIO.LOW)
 
-time.sleep(.5)
+time.sleep(3)
 
 GPIO.output(REVERSE_CHANNEL, GPIO.HIGH)
 
