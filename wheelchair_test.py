@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setup(channel, GPIO.OUT, initial=GPIO.HIGH)
+GPIO.setup(4, GPIO.OUT, initial=GPIO.HIGH)
 
 '''
 
