@@ -6,6 +6,7 @@ GPIO.setmode(GPIO.BOARD)
 
 for i in range(1,41):
     lable = "????"
+    pin = i
     func = GPIO.gpio_function(pin)
     if func == GPIO.INPUT:
         lable = "Input"
@@ -21,5 +22,5 @@ for i in range(1,41):
         lable = "SERIAL"
     elif func == GPIO.UNKNOWN:
         lable = "UNKNOWN"
-    print(str(i)+" "+lable)
+    print(str(pin)+" "+lable)
 
