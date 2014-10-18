@@ -6,11 +6,11 @@ import time
 def Check_Channel(channel):
     time.sleep(.5)
 
-    GPIO.output(channel, GPIO.HIGH)
+    GPIO.output(channel, GPIO.LOW)
 
     time.sleep(.75)
 
-    GPIO.output(channel, GPIO.LOW)
+    GPIO.output(channel, GPIO.HIGH)
 
 'RPI Pins'    
 FORDWARD_CHANNEL = 8
@@ -20,10 +20,10 @@ RIGHT_CHANNEL = 16
 
 GPIO.setmode(GPIO.BOARD)
 
-GPIO.setup(FORDWARD_CHANNEL, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(REVERSE_CHANNEL, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(LEFT_CHANNEL, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(RIGHT_CHANNEL, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(FORDWARD_CHANNEL, GPIO.OUT, initial=GPIO.HIGH)
+GPIO.setup(REVERSE_CHANNEL, GPIO.OUT, initial=GPIO.HIGH)
+GPIO.setup(LEFT_CHANNEL, GPIO.OUT, initial=GPIO.HIGH)
+GPIO.setup(RIGHT_CHANNEL, GPIO.OUT, initial=GPIO.HIGH)
 
 Check_Channel(FORDWARD_CHANNEL)
 Check_Channel(REVERSE_CHANNEL)
