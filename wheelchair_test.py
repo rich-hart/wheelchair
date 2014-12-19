@@ -25,10 +25,10 @@ GPIO.setup(REVERSE_CHANNEL, GPIO.OUT, initial=GPIO.HIGH)
 GPIO.setup(LEFT_CHANNEL, GPIO.OUT, initial=GPIO.HIGH)
 GPIO.setup(RIGHT_CHANNEL, GPIO.OUT, initial=GPIO.HIGH)
 
-Check_Channel(FORDWARD_CHANNEL)
-Check_Channel(REVERSE_CHANNEL)
+#Check_Channel(FORDWARD_CHANNEL)
+#Check_Channel(REVERSE_CHANNEL)
 Check_Channel(LEFT_CHANNEL)
-Check_Channel(RIGHT_CHANNEL)
+#Check_Channel(RIGHT_CHANNEL)
 
 GPIO.cleanup()
 
